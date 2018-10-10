@@ -1,0 +1,5 @@
+#ignore all auto-generated latex files
+*.pdf
+*.aux
+*.log
+*.out

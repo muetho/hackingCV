@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hacking Style Resume/CV
+% LaTeX Template
+%
+% author: 	Thomas Müller
+% mail:		muetho25@gmail.com
+%
+% License: 	MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{hackingcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{figures/hacker.jpg} 	% Profile picture
+
+\cvname{Mr.Robot} 			% Your name
+\cvjobtitle{Hacktivist} 		% Job title/career
+
+\cvdate{31 August 1987}			% Date of birth
+\cvaddress{Switzerland} 		% Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+41 79 777 80 77}	% Phone number
+\cvhomepage{www.example.org} 		% Personal website (omit https://)
+\cvgithub{github.com/hacker/} 		% Github account (omit https://)
+\cvlinkedin{in/mr-robot-1234}		% Linkedin profile (omit https://linkedin.com/)
+\cvmail{me@hacker.com}	 		% Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 PROFILE
+%----------------------------------------------------------------------------------------
+
+% To have no profile section, just remove all the text and leave \profile{}
+\profile{Experienced network engineer and hacktivist - well known from the famous TV series \textit{Mr.Robot}.} 
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\primarySkills{Programming languages}{Python/4.8,{C\#/Java}/5.1,{C/C++}/5.8}
+\secondarySkills{Engineering}{Cryptography/5.8,Network Security/5.5}
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{Operating systems}{Linux/6,macOS/5,Windows/4}
+
+\languageSkills{German/fluent, English/fluent}
+
+% Skills info (leave empty if not meant to be printed)
+\skillsinfo{The skill scale is from 0 (basics) to 6 (expert)}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+% print the fancy sections with current (/.) and parent (/..) folder in linux style
+\currentParentFolderSections
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{since 01/2015}{Hacktivist, fsociety}{Mountainview,CA}{Blocking the (evil) company's revenue stream with cyber security attacks.}
+	\twentyitem{08/2010-12/2015}{Network Engineer, Allsafe Cybersecurity}{New York, NY}{Setup and maintain firewall and intrusion detection systems in big company infrastructures.}
+	\twentyitem{09/2006-07/2010}{CEO, Mr. Robot Computer Services}{At home}{Solving customers everyday computer problems and selling overpriced hardware.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2003-2006}{MSc Engineering ICT, MIT}{Boston, MA}{Majoring in computer science.}
+	\twentyitem{1861-1863}{BSc Electrical Engineering, MIT}{Boston, MA}{Majoring in wireless communication}
+	\twentyitem{1856-1861}{High school}{Springfield,IL}{Specializing in mathematics and physics.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{2000}{\emph{A Cryptographic Evaluation of TLS}}
+	\twentyitemshort{2010}{\emph{Hacking E Corp}, \normalfont DEF CON 20, Las Vegas NV.}
+	\twentyitemshort{2014}{\emph{How to secure your network}, \normalfont Chap. 1 in \emph{IT Security Getting Started}, Hacktivity Press, Mountainview CA.}
+	\twentyitemshort{2018}{\emph{Quantum Computer Implementation of SHA-3 Cryptographic Hash Function}, \normalfont 1st IEEE International Conference on Quantum Computing, Boston MA.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 STRENGTHS
+%----------------------------------------------------------------------------------------
+
+\section{Strengths}
+
+\strength{Team-player} \strength{Creative} \strength{Detail oriented} \strength{Communicative}
+
+%----------------------------------------------------------------------------------------
+%	 HOBBIES
+%----------------------------------------------------------------------------------------
+%TODO(muetho): outsorce into "\hobbies" command in hackingcv.cls
+\section{Hobbies}
+\begin{tabular}{p{2cm} p{2cm} p{2cm} p{2cm} p{2cm} p{2cm}}
+	\hobbyIcon{\faBullseye}	& \hobbyIcon{\faBicycle} & \hobbyIcon{\faBeer} & \hobbyIcon{$\spadesuit$} & \hobbyIcon{\faFlag}	& \hobbyIcon{\faGamepad}\\
+	\color{\mainTextColor}Darts & \color{\mainTextColor}Bicycle & \color{\mainTextColor}Beer & \color{\mainTextColor}Poker	& \color{\mainTextColor}Hacking challenges & \color{\mainTextColor}Gaming\\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{README.txt}
+
+\subsection{Random Text}
+\randomtext{This is just some random text.}
+
+\subsection{Quotes}
+\triviaQuote{I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.}{Bill Gates}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
